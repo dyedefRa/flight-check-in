@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/merveer/flight-check-in/issues"
   },
-  "homepage": "https://github.com/merveer/flight-check-in#readme"
+  "homepage": "https://github.com/merveer/flight-check-in#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.1",
+    "mongoose-sequence": "^4.0.1"
+  }
 }
