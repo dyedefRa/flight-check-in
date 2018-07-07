@@ -2,7 +2,7 @@ const fs = require('fs');
 const userModel = require('../models/user-model');
 
 async function findAll() {
-    return userModel.find()
+    return userModel.find().sort({ id: -1 });
 }
 
 async function add(user) {
