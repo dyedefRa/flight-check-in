@@ -12,7 +12,11 @@ Pick your seat and check in to flight
 ### Installation and Setup Instructions
 
 *Clone down this repository:*
-You will need `node` and `npm` installed globally on your machine.
+You will need `node` `npm` and `mongodb` installed globally on your machine.
+
+"node": ">= 9.4.0"
+"npm": ">= 5.6.0"
+
 ```git clone https://github.com/merveer/flight-check-in.git```
 ```cd flight-check-in```
 
