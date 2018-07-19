@@ -4,6 +4,7 @@ Pick your seat and check in to flight
 ## Technologies
 
 [**VueJs**](https://vuejs.org/)<br/>
+[**Vuex**](https://vuex.vuejs.org/)<br/>
 [**MongoDB**](https://www.mongodb.com/)<br/>
 [**NodeJs**](https://nodejs.org/en/)<br/>
 [**ExpressJs**](https://expressjs.com/)<br/>
