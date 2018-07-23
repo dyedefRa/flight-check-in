@@ -57,7 +57,7 @@ export default {
       email: '',
       second: 0,
       minute: 3,
-      i: 0,
+      duration: 0,
       // checkout_button: true,
       disablebutton: false
     }
@@ -93,13 +93,13 @@ export default {
     ]),
     startTimer () {
       this.checkout_button = true
-      this.i = 0
+      this.duration = 0
       this.disablebutton = true
       this.$refs.myModalRef.hide()
       setInterval(this.timer, 1000)
     },
     timer () {
-      if (this.i < 180) {
+      if (this.duration < 180) {
         if (this.second == 0) {
           this.minute = this.minute - 1
           this.second = 59
@@ -107,10 +107,10 @@ export default {
             this.minute = 2
             this.second = 59
           }
-          this.i++
+          this.duration++
         } else {
           this.second -= 1
-          this.i++
+          this.duration++
         }
       } else {
         this.disablebutton = false
@@ -121,7 +121,7 @@ export default {
       }
     },
     fetchUser () {
-      axios.get('http://localhost:3030/user/fetch-user')
+      axios.get('http://localhost:3030/user/fetch')
         .then(response => {
           this.name = response.data.name
         })

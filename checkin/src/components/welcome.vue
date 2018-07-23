@@ -69,7 +69,7 @@ export default {
         email: this.form.email
       }
       console.log(newUser)
-      axios.post('http://localhost:3030/user/add-user', newUser)
+      axios.post('http://localhost:3030/user/add', newUser)
         .then((response) => {
           console.log(response.data)
           window.location = 'http://localhost:8080/#/checkin'
